@@ -3,7 +3,7 @@
 # Need to get input from the user and add to an empty dictionary.
 
 user_string = {}
-user_text = input("Please enter a string of text: "))
+user_text = input("Please enter a string of text: ")
 
 words = user_text.split()
 # Counting the words from the users input
