@@ -8,7 +8,7 @@ HEX_COLOURS = {"black": "#000000", "blue1": "#0000ff",
 # print(HEX_COLOURS)
 
 
-colour_name = input("Enter colour name: ").upper()
+colour_name = input("Enter colour name: ")
 while colour_name != "":
     if colour_name in HEX_COLOURS:
         print("The code for \"{}\" is {}".format(colour_name, HEX_COLOURS[colour_name]))
