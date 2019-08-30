@@ -1,4 +1,4 @@
-""" Please choose a colour name and we will tell you the hexadecimal colour code."""
+"""Please choose a colour name and we will tell you the hexadecimal colour code."""
 
 HEX_COLOURS = {"black": "#000000", "blue1": "#0000ff",
                "darkgreen": "#006400", "darkorange": "#ff8c00",
