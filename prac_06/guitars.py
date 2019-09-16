@@ -27,8 +27,10 @@ def main():
             vintage_string = ""
             if guitar.is_vintage():
                 vintage_string = "(vintage)"
-            print("Guitar {}: {:>10} ({}), worth ${:10,.2f}{}".format(i + 1, guitar.name, guitar.year, guitar.cost,
+            print("Guitar {}: {:<10} ({}), worth ${:10,.2f}{}".format(i + 1, guitar.name, guitar.year, guitar.cost,
                                                                       vintage_string))
+    else:
+        print("You don't have any guitars?")
 
 
 main()
