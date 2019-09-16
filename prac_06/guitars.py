@@ -13,6 +13,7 @@ def main():
         guitar_to_add = Guitar(name, year, cost)
         guitars.append(guitar_to_add)
         print(guitar_to_add)
+        name = input("Name: ")
 
 
 main()
