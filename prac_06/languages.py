@@ -1,6 +1,8 @@
 """ CP1404 Practicals
 Programming Languages"""
 
+from prac_06.ProgrammingLanguage import ProgrammingLanguage
+
 
 def main():
     ruby = ProgrammingLanguage("Ruby", "Dynamic", True, 1995)
