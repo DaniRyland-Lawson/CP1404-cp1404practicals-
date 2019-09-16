@@ -1,2 +1,4 @@
-""" CP1404 Guitars"""
+""" CP1404 Programming II
+Guitars"""
 
+def main():

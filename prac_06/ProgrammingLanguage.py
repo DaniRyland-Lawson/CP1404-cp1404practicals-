@@ -1,4 +1,4 @@
-""" CP1404 Practicals
+""" CP1404 Prac 6
 Programming Languages"""
 
 

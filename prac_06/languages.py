@@ -1,4 +1,4 @@
-""" CP1404 Practicals
+""" CP1404 Prac 6
 Programming Languages"""
 
 from prac_06.ProgrammingLanguage import ProgrammingLanguage
