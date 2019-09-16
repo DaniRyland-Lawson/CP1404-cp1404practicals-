@@ -35,6 +35,7 @@ def main():
             print("Invalid")
         print(MENU_STRING)
         menu_selection = input(">").upper()
+    save_products(products)
     print("Finished")
 
 
