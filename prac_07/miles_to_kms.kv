@@ -1,0 +1,30 @@
+BoxLayout:
+    orientation: 'vertical'
+    BoxLayout:
+        orientation: 'horizontal'
+        TextInput:
+            id: input_number
+            text: '7'
+            font_size: 48
+            multiline: False
+
+        BoxLayout:
+            orientation: 'vertical'
+
+            Button:
+                text: 'Up'
+                font_size: 48
+            Button:
+                text: 'Down'
+                font_size: 48
+
+    BoxLayout:
+        orientation: 'vertical'
+        Button:
+            id: convert
+            text: 'Convert m to km'
+
+        Label:
+            id: output_label
+            font_size: 48
+            color: 1, 0, 0, 1
