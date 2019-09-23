@@ -6,7 +6,7 @@ from kivy.app import StringProperty
 
 class MilesToKlms(App):
     def build(self):
-        Window.size = (200, 400)
+
         self.title = "Convert Miles to Kilometres"
         self.root = Builder.load_file('miles_to_kms.kv')
         return self.root
