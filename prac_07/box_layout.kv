@@ -2,8 +2,8 @@ BoxLayout:
     orientation: 'vertical'
 #    orientation: 'horizontal'
     Button:
-        id: reset
-        text: 'Clear'
+        text: 'Clear Widgets'
+        on_release: app.clear_all()
     TextInput:
         id: input_name
         text: ''
