@@ -12,6 +12,22 @@ def main():
     taxis = [Taxi("Prius", 100), SilverServiceTaxi("Limo", 100, 2), SilverServiceTaxi("Hummer", 200, 4)]
     print("Let's drive!")
     print(MENU)
+    user_choice = input(">>>").upper()
 
+    while user_choice != "Q":
+        if user_choice == "C":
+            print("Taxi's available:")
+            list_taxis(taxis)
+            taxi_choice = int(input("Choose Taxi: "))
+            current_taxi = taxis[taxi_choice]
+            print("Bill to date: ${:.2f}".format(taxis[taxi_choice].get_fare()))
+        elif user_choice == "D":
+            pass
 
+    else:
+        print("Invalid Menu selection")
+
+def list_taxis(taxis):
+    for i, taxi in enumerate(taxis):
+        print("{} - {}".format(i, taxi))
 main()
