@@ -5,9 +5,9 @@ from random import randint
 
 class UnreliableCar(Car):
 
-    def __init__(self, name, fuel):
+    def __init__(self, name, fuel, reliability):
         super().__init__(name, fuel)
-        self.reliability = 0
+        self.reliability = reliability
 
     def drive(self, distance):
         random_number = randint(0, 101)
