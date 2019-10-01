@@ -8,7 +8,7 @@ def main():
     """Test for UnreliableCars."""
 
     # Create some cars for reliability
-    good_car = UnreliableCar("Good Car", 100, 80)
+    good_car = UnreliableCar("Good Car", 100, 90)
     bad_car = UnreliableCar("Bad Car", 100, 10)
 
     # Attempts to drive the cars multiple times
