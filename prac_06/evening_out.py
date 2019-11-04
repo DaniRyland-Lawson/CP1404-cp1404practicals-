@@ -5,6 +5,7 @@ from drinklist import DrinkList
 
 MENU = ("Menu:")
 
+
 def main():
     available_drinks = load_drinks("all_drinks.csv")
     # print([str(drink) for drink in available_drinks])
@@ -23,13 +24,12 @@ def main():
         menu_choice = input(">").lower()
     print(
         "You drank {} drinks, ({} were alcoholic for a total of {}ml alcohol), which cost ${:.2f}".format(
-        len(my_drinks), my_drinks.get_number_alcoholic(), my_drinks.get_alcohol_content(), my_drinks.get_total_price()))
+            len(my_drinks), my_drinks.get_number_alcoholic(), my_drinks.get_alcohol_content(),
+            my_drinks.get_total_price()))
 
 
 def display_available_drinks(drinks):
     print([(i, str(drink)) for i, drink in enumerate(drinks)])
-
-
 
 
 def load_drinks(filename):
