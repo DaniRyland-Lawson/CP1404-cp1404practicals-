@@ -11,12 +11,6 @@ load products
 - Q_uit (save file)
 """
 
-# make CSV from list of lists
-# with open("products.csv", "w") as output_file:
-#     for product in products:
-#         sale_status = 'y' if product[2] else 'n'
-#         print("{}, {}, {}".format(product[0], product[1], sale_status))
-
 PRODUCTS_FILE = "products.csv"
 MENU_STRING = ">>>"
 
@@ -50,6 +44,7 @@ def list_products(products):
     for product in products:
         print(product)
 
+
 def swap_sale_status(products):
     list_products(products)
     is_valid_input = False
@@ -63,6 +58,14 @@ def swap_sale_status(products):
         except ValueError:
             print("Invalid (not an integer)")
     print(products[number])
+
+
+# make CSV from list of lists
+def save_products(products):
+    with open("products.csv", "r") as output_file:
+        for product in output_file:
+            sale_status = 'y' if product[2] else 'n'
+            print("{}, {}, {}".format(product[0], product[1], sale_status))
 
 
 main()
