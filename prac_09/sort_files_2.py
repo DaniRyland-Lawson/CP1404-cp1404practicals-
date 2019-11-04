@@ -13,7 +13,7 @@ def main():
 
         file_extension = file_name.split('.')[-1]
         if file_extension not in extension_choices:
-            choice = input("What file type would you like to sort {] files into? ".format(file_extension))
+            choice = input("What file type would you like to sort {} files into? ".format(file_extension))
             extension_choices[file_extension] = choice
             try:
                 os.mkdir(choice)
