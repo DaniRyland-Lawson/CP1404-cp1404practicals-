@@ -66,3 +66,5 @@ run_tests()
 # and one more you decide (one that is valid!)
 # test this and watch the tests fail
 # then write the body of the function so that the tests pass
+
+doctest.testmod()
