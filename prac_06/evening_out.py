@@ -1,7 +1,7 @@
 """Program to keep track of appropriate drinking"""
 
-from drink import Drink
-from drinklist import DrinkList
+from prac_06.drink import Drink
+from prac_06.drinklist import DrinkList
 
 MENU = ("Menu:")
 
