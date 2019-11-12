@@ -1,14 +1,15 @@
 """
 CP1404/CP5632 Practical
 Cleanup song lyrics file names
+
+Not complete. Can not figure out
 """
 import os
 
 
 def main():
     """Clean up song lyric filenames."""
-
-    print(os.getcwd())
+    os.chdir('Lyrics')
     try:
         os.mkdir("temp_lyrics")
     except FileExistsError:
@@ -21,7 +22,6 @@ def main():
         new_name = name[:name.find(".")] + ".txt"
         print(new_name)
     # Change to desired directory
-    os.chdir('Lyrics')
 
     for directory_name, subdirectories, filenames in os.walk("."):
         print("Directory: ", directory_name)
@@ -45,4 +45,3 @@ def get_fixed_filename(filename):
 
 
 main()
-
